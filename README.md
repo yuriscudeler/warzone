@@ -1,12 +1,17 @@
 # Backend
 
+## Dependencies
+
+Run `npm install`
+
 ## Environments
 
 Change environment values in `environment.js`.
 
 ## Database
 
-Create a MySQL instance or use `docker/docker-compose.yml` to start one, then run the script in `db.sql`.
+Create a MySQL instance (requires CTE support) or use `docker/docker-compose.yml` to start one (`MariaDB`), then run the script in `db.sql`.
+The data in `db.sql` may be wrong or outdated. Any correction/update is welcome.
 
 ## Development server
 
@@ -15,6 +20,10 @@ Run `node app.js` to start dev server after database is running.
 # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+
+## Dependencies
+
+Run `npm install`
 
 ## Development server
 
