@@ -1,0 +1,4 @@
+{{ tech.name }}
+<div class="inner">
+    <app-tech-detail *ngFor="let parent of tech.parents" [tech]="parent"></app-tech-detail>
+</div>

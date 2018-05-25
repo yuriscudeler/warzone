@@ -1,0 +1,6 @@
+<input (keyup)="onSearchTextChange()" [(ngModel)]="searchText" type="text" name="searchText" id="searchText">
+<ol>
+    <li (click)="onTechClick(tech)" *ngFor="let tech of filteredTechs">{{ tech.name }}</li>
+</ol>
+
+<app-tech-detail *ngIf="selectedTech" [tech]="selectedTech"></app-tech-detail>

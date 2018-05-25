@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+
+  mysql:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
+    volumes:
+      - wp_persistence:/var/lib/mysql
+
+volumes:
+  wp_persistence:
+    driver: local
